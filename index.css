@@ -1,0 +1,87 @@
+
+body {
+  margin  : 0;
+  height  : 100%;
+  overflow: hidden;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.pane {
+  height         : 100%;
+  width          : 50%;
+  position       : fixed;
+  overflow-x     : hidden;
+  transition     : 0.5s;
+  padding-top    : 60px;
+  text-align     : center;
+  background-position: center;
+  background-size: cover
+}
+
+
+.left {
+  float           : left;
+  top             : 0;
+  left            : 0;
+  background-image: url(./job.jpg);
+}
+
+.right {
+  float           : right;
+  top             : 0;
+  right           : 0;
+  background-image: url(./study.jpg);
+  background-color: rgb(79, 169, 179);
+}
+
+.left:hover,
+.right:hover {
+  transition   : width 99%;
+  z-index: 1;
+}
+
+.btn {
+  position     : fixed;
+  font-family  : inherit;
+  font-weight  : 700;
+  font-size    : 20px;
+  cursor       : pointer;
+  white-space  : nowrap;
+  box-shadow   : rgba(0, 0, 0, 0.1) 0px 3px 12px 0px;
+  color        : #fff;
+  transition   : background-color 0.2s ease 0s, color 0.2s ease 0s, border-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  outline      : none;
+  border-width : 1px;
+  border-style : solid;
+  border-image : initial;
+  top          : 40%;
+  padding      : 8px 32px;
+  border-color : transparent;
+  z-index      : 2;
+}
+
+
+.left>.btn {
+  background-color: rgb(69, 122, 83);
+  right           : 50%;
+}
+
+.right>.btn {
+  left            : 50%;
+  background-color: rgb(79, 169, 179);
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  width: 4rem;
+  height: 5rem;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background-image: url(./logo.png);
+  z-index: 3;
+  background-size: cover
+}
